@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>安科特 Antece</title>
-<meta name="description" content="北京安科特科技有限公司（Antece）— 视频图像处理、多媒体信号切换与大屏幕拼接控制设备的研发与生产。">
+<title>Antece</title>
+<meta name="description" content="Beijing Antece Electronic Technology Co., Ltd. designs and manufactures matrix switchers, video wall processors and signal transmission equipment for command centers, security monitoring and multimedia display.">
 <style>
   :root {
     --bg: #ffffff; --alt: #f4f6f9; --text: #0f172a; --muted: #526072;
@@ -310,9 +310,9 @@
     document.title = l === 'en' ? 'Antece' : '安科特 Antece';
     try { localStorage.setItem('lang', l); } catch (e) {}
   }
-  var cur = 'zh';
-  try { cur = localStorage.getItem('lang') || 'zh'; } catch (e) {}
-  if (cur === 'en') setLang('en');
+  var cur = 'en';
+  try { cur = localStorage.getItem('lang') || 'en'; } catch (e) {}
+  setLang(cur);
   document.getElementById('lang').addEventListener('click', function () {
     cur = cur === 'en' ? 'zh' : 'en'; setLang(cur);
   });

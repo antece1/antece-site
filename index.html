@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Antece</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Antece">
+<meta property="og:image" content="logo.png">
 <meta name="description" content="Beijing Antece Electronic Technology Co., Ltd. designs and manufactures matrix switchers, video wall processors and signal transmission equipment for command centers, security monitoring and multimedia display.">
 <style>
   :root {
@@ -30,11 +33,8 @@
     backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
   }
   .bar { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
-  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; }
-  .logo .mark {
-    width: 34px; height: 34px; border-radius: 8px; background: var(--brand); color: #fff;
-    display: grid; place-items: center; font-weight: 800; font-size: 17px; letter-spacing: -0.5px;
-  }
+  .logo { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; text-decoration: none; color: var(--text); }
+  .logo .wordmark { height: 22px; width: auto; display: block; }
   .logo small { display: block; font-weight: 500; font-size: 11px; color: var(--muted); line-height: 1.2; }
   nav { display: flex; align-items: center; gap: 22px; }
   nav a { text-decoration: none; color: var(--muted); font-size: 15px; }
@@ -127,9 +127,12 @@
 <body>
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#top">
-      <span class="mark">A</span>
-      <span><span data-en="Antece">安科特 Antece</span><small data-en="Beijing Antece Electronic Technology Co., Ltd.">北京安科特科技有限公司</small></span>
+    <a class="logo" href="#top" aria-label="Antece">
+      <svg class="wordmark" viewBox="30 478 1132 206" fill="none" stroke="currentColor" stroke-width="31" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M62 653 L183 510 L185 653"/><path d="M251 653 L252 512 L375 651 L378 509"/><path d="M441 509 H556 M503 509 V653"/>
+        <path d="M618 509 H752 M618 580 H752 M618 653 H752"/><path d="M930 509 H808 V651 H934"/><path d="M997 509 H1131 M997 580 H1131 M997 653 H1131"/>
+      </svg>
+      <small data-en="Beijing Antece Electronic Technology Co., Ltd.">北京安科特科技有限公司</small>
     </a>
     <nav>
       <a href="#about" data-en="About">关于我们</a>
